@@ -1,0 +1,96 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffeebb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+   
+  .todo-container {
+    width: 80%;
+    max-width: 600px;
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .todo-container h4{
+    background-color: rgb(57, 57, 162);
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: centercode;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-task {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e6e6e6;
+    border-radius: 4px;
+  }
+  
+  li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  li input[type="date"] {
+    margin-right: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .add-task {
+      flex-direction: column;
+    }
+  
+    input[type="text"] {
+      margin-bottom: 10px;
+    }
+  
+    ul li {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
